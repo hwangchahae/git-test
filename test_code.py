@@ -1,12 +1,16 @@
 def calculate_average(numbers):
-    # 'sum(number)'를 'sum(numbers)'로 수정하여 올바른 변수명을 사용합니다.
+    # 'number' 대신 'numbers'로 수정하여 sum 함수가 올바르게 작동하도록 수정
     total = sum(numbers)
-    # 괄호를 닫아 'len(numbers)'를 올바르게 사용합니다.
+    # 괄호를 닫아 구문 오류를 수정
     average = total / len(numbers)
     return average
 
-# 평균 계산 함수 호출
+# 평균 계산 함수 호출 및 결과 출력
 print(calculate_average([1, 2, 3, 4, 5]))
 ```
 
-위의 수정 사항은 `test_code.py` 파일의 오류를 수정한 것입니다. `sum(number)`를 `sum(numbers)`로 수정하여 올바른 변수명을 사용하였고, `len(numbers`의 괄호를 닫아 문법 오류를 해결했습니다. 이러한 수정은 함수가 올바르게 평균을 계산할 수 있도록 합니다.
+위 코드는 `test_code.py` 파일의 오류를 수정한 것입니다. 주요 변경 사항은 다음과 같습니다:
+1. `sum(number)`에서 `number`를 `numbers`로 수정하여 올바른 변수명을 사용했습니다.
+2. `average = total / len(numbers`에서 괄호를 닫아 구문 오류를 수정했습니다.
+
+이제 이 코드는 정상적으로 작동하여 주어진 숫자 리스트의 평균을 계산하고 출력할 것입니다.
